@@ -1,6 +1,6 @@
 {
   "name": "mobx-disposer-util",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -9,6 +9,14 @@
     "prebuild": "eslint . --fix",
     "build": "tsc",
     "prepublish": "pnpm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/js2me/mobx-disposer-util/issues"
+  },
+  "homepage": "https://github.com/js2me/mobx-disposer-util",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/js2me/mobx-disposer-util"
   },
   "keywords": ["mobx", "mobx-utils", "disposer"],
   "author": "js2me",
