@@ -20,7 +20,7 @@
   },
   "keywords": ["mobx", "mobx-utils", "disposer"],
   "author": "js2me",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "dependencies": {},
   "devDependencies": {
