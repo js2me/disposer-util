@@ -1,6 +1,6 @@
 {
-  "name": "mobx-disposer-util",
-  "version": "0.0.4",
+  "name": "disposer-util",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -11,14 +11,14 @@
     "prepublish": "pnpm run build"
   },
   "bugs": {
-    "url": "https://github.com/js2me/mobx-disposer-util/issues"
+    "url": "https://github.com/js2me/disposer-util/issues"
   },
-  "homepage": "https://github.com/js2me/mobx-disposer-util",
+  "homepage": "https://github.com/js2me/disposer-util",
   "repository": {
     "type": "git",
-    "url": "git://github.com/js2me/mobx-disposer-util"
+    "url": "git://github.com/js2me/disposer-util"
   },
-  "keywords": ["mobx", "mobx-utils", "disposer"],
+  "keywords": ["utils", "disposer"],
   "author": "js2me",
   "license": "MIT",
   "description": "",
