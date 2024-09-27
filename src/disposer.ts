@@ -1,7 +1,12 @@
 import { Disposable } from './disposable';
 
-export class Disposer implements Disposable {
-  protected disposeFns: VoidFunction[] = [] as VoidFunction[];
+export interface IDisposer extends Disposable {
+  isDisposed: boolean;
+  add(...disposeFns: VoidFunction[]): void;
+}
+
+export class Disposer implements IDisposer {
+  protected disposeFns: VoidFunction[] = [];
 
   public isDisposed = false;
 
