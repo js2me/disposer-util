@@ -1,15 +1,15 @@
 import { Disposable } from './disposable';
 
 export class Disposer implements Disposable {
-  private disposeFns: VoidFunction[] = [];
+  protected disposeFns: VoidFunction[] = [] as VoidFunction[];
 
-  isDisposed = false;
+  public isDisposed = false;
 
-  add = (...disposeFns: VoidFunction[]) => {
+  public add = (...disposeFns: VoidFunction[]) => {
     this.disposeFns.push(...disposeFns);
   };
 
-  dispose = () => {
+  public dispose = () => {
     this.disposeFns.forEach((dispose) => dispose());
     this.disposeFns.length = 0;
     this.isDisposed = true;
