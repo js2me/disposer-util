@@ -1,12 +1,8 @@
 {
   "name": "disposer-util",
-  "version": "1.0.7",
-  "files": [
-    "*"
-  ],
+  "version": "1.0.8",
   "scripts": {
     "clean": "rimraf dist",
-
     "prebuild": "npm run clean && eslint . --fix",
     "build": "tsc",
     "postbuild": "node ./post-build.mjs",
@@ -22,11 +18,13 @@
     "type": "git",
     "url": "git://github.com/js2me/disposer-util"
   },
-  "keywords": ["utils", "disposer"],
+  "keywords": [
+    "utils",
+    "disposer"
+  ],
   "author": "js2me",
   "license": "MIT",
   "description": "",
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "20.14.5",
     "@typescript-eslint/eslint-plugin": "7.13.1",
@@ -37,6 +35,7 @@
     "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-prettier": "5.1.3",
+    "exports-post-build-script": "github:js2me/exports-post-build-script",
     "prettier": "3.3.2",
     "typescript": "5.4.5"
   },
