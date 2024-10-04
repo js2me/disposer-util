@@ -1,9 +1,8 @@
 {
   "name": "disposer-util",
-  "version": "1.0.3",
-  "main": "dist/index.js",
+  "version": "1.0.4",
   "files": [
-    "dist"
+    "*"
   ],
   "scripts": {
     "clean": "rimraf dist",
