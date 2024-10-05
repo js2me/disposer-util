@@ -15,3 +15,5 @@ nginx.conf
 jsconfig.json
 *.json
 .eslintrc.js
+.eslintrc.cjs
+post-build.mjs
