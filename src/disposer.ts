@@ -1,4 +1,5 @@
 import { LinkedAbortController } from 'linked-abort-controller';
+
 import { Disposable } from './disposable';
 
 export interface IDisposer extends Disposable {
@@ -7,13 +8,13 @@ export interface IDisposer extends Disposable {
 }
 
 export class Disposer implements IDisposer {
-  protected abortController: AbortController
+  protected abortController: AbortController;
 
-  signal: AbortSignal
+  signal: AbortSignal;
 
   constructor(...signals: ConstructorParameters<typeof LinkedAbortController>) {
     this.abortController = new LinkedAbortController(...signals);
-    this.signal = this.abortController.signal; 
+    this.signal = this.abortController.signal;
   }
 
   protected disposeFns: VoidFunction[] = [];
@@ -28,6 +29,6 @@ export class Disposer implements IDisposer {
     this.disposeFns.forEach((dispose) => dispose());
     this.disposeFns.length = 0;
     this.isDisposed = true;
-    this.abortController.abort(); 
+    this.abortController.abort();
   };
 }
