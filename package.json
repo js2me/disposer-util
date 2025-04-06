@@ -1,6 +1,6 @@
 {
   "name": "disposer-util",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scripts": {
     "clean": "rimraf dist",
     "check": "eslint . --fix",
