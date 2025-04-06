@@ -24,16 +24,17 @@
   ],
   "author": "js2me",
   "license": "MIT",
+  "type": "module",
   "description": "",
   "dependencies": {
-    "linked-abort-controller": "^1.0.4"
+    "linked-abort-controller": "^1.1.0"
   },
   "devDependencies": {
-    "@types/node": "20.14.5",
-    "eslint": "8.57.0",
-    "js2me-exports-post-build-script": "2.0.10",
-    "js2me-eslint-config": "1.0.3",
-    "typescript": "5.4.5"
+    "@types/node": "^20.17.30",
+    "eslint": "^8.57.1",
+    "js2me-eslint-config": "^1.0.7",
+    "js2me-exports-post-build-script": "^2.0.18",
+    "typescript": "^5.8.3"
   },
   "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }

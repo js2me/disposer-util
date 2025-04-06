@@ -1,6 +1,6 @@
 import { LinkedAbortController } from 'linked-abort-controller';
 
-import { Disposable } from './disposable';
+import { Disposable } from './disposable.js';
 
 export interface IDisposer extends Disposable {
   isDisposed: boolean;

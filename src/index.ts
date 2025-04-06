@@ -1,2 +1,2 @@
-export * from './disposable';
-export * from './disposer';
+export * from './disposable.js';
+export * from './disposer.js';
